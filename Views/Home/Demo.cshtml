@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+}
+
+<script>
+    function onChange() {
+        alert("on change event")
+    }
+
+    function onSelect() {
+        alert("value");
+    }
+
+</script>
+<div class="Autocomplete">
+
+    @(Html.Kendo().MultiSelect().Name("Countries").Filter("startswith").Placeholder("Select country..").BindTo(new String[]{
+
+        "India", "China", "Delhi","Punjab", "Mumbai", "Chennai", "Gujrat","Gujral", "Pune", "Rajasthan", "Kolkata", "Jammu","Kashmir","Himanchal", "Uttrakhand", "Shimla","Manali"
+        }).Value(new string[] { "Anne King", "Andrew Fuller" })
+        )
+
+
+    @*@(Html.Kendo().ComboBox().Name("Student").Filter("startswith").Placeholder("Select student").HtmlAttributes(new{Style="width:70%;" })
+            .BindTo(new List<SelectListItem>()
+        {
+        new SelectListItem { Text="Ash" ,Value= "1"},
+        new SelectListItem { Text="HAsh" ,Value= "2"},
+        new SelectListItem { Text="CAsh" ,Value= "3"},
+        new SelectListItem { Text="Lash" ,Value= "4"},
+        new SelectListItem { Text="mash" ,Value= "5"}
+
+
+        })
+        .Events(e =>{
+            e.Change("onChange")
+            .Select("onSelect");
+        })
+
+        )*@
+
+
+
+
+
+</div>
+

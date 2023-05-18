@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="IIPL_Customer_ManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="country_master">
+          <Key>
+            <PropertyRef Name="country_id" />
+          </Key>
+          <Property Name="country_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="country" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Company_Code" Type="tinyint" />
+          <Property Name="Finyear_code" Type="tinyint" />
+          <Property Name="Created_By" Type="tinyint" />
+          <Property Name="created_date" Type="datetime" />
+          <Property Name="Generated_By" Type="int" />
+          <Property Name="Generated_Date" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="IIPL_Customer_ManagementModelStoreContainer">
+          <EntitySet Name="country_master" EntityType="Self.country_master" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IIPL_Customer_ManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="country_master">
+          <Key>
+            <PropertyRef Name="country_id" />
+          </Key>
+          <Property Name="country_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Company_Code" Type="Byte" />
+          <Property Name="Finyear_code" Type="Byte" />
+          <Property Name="Created_By" Type="Byte" />
+          <Property Name="created_date" Type="DateTime" />
+          <Property Name="Generated_By" Type="Int32" />
+          <Property Name="Generated_Date" Type="DateTime" />
+        </EntityType>
+        <EntityContainer Name="IIPL_Customer_ManagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="country_master" EntityType="Self.country_master" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IIPL_Customer_ManagementModelStoreContainer" CdmEntityContainer="IIPL_Customer_ManagementEntities">
+          <EntitySetMapping Name="country_master">
+            <EntityTypeMapping TypeName="IIPL_Customer_ManagementModel.country_master">
+              <MappingFragment StoreEntitySet="country_master">
+                <ScalarProperty Name="country_id" ColumnName="country_id" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="Company_Code" ColumnName="Company_Code" />
+                <ScalarProperty Name="Finyear_code" ColumnName="Finyear_code" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="created_date" ColumnName="created_date" />
+                <ScalarProperty Name="Generated_By" ColumnName="Generated_By" />
+                <ScalarProperty Name="Generated_Date" ColumnName="Generated_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
