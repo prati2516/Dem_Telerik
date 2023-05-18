@@ -29,10 +29,28 @@ namespace Dem_Telerik.Controllers
 
             return View("../Home/Demo");
         }
-     
+
+
         ////checked by aniket
         public ActionResult newfunction ()
         {
+
+            return View("../Home/Demo");
+            //Ashkered changes 
+            //vhngesbjb cdni 
+        }
+
+
+     
+        ////checked by aniket
+
+        public ActionResult Pratiksh()
+        {
+
+            return View("../Home/Demo");
+        }
+
+
 
 
     }
