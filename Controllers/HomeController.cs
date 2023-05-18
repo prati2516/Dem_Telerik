@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebGrease.Css.Ast.Selectors;
 
 namespace Dem_Telerik.Controllers
 {
@@ -28,9 +29,13 @@ namespace Dem_Telerik.Controllers
 
             return View("../Home/Demo");
         }
-     
-        ////checked by aniket
 
+        ////checked by aniket
+        public ActionResult newfunction ()
+        {
+
+            return View("../Home/Demo");
+        }
 
     }
 }
