@@ -23,6 +23,11 @@ namespace Dem_Telerik.Controllers
 
             return View("../Home/Demo");
         }
+        public ActionResult fetchname()
+        {
+
+            return View("../Home/Demo");
+        }
 
 
 
