@@ -28,9 +28,8 @@ namespace Dem_Telerik.Controllers
 
             return View("../Home/Demo");
         }
-
-        ////@*hello gmial *@
-         //vhnage dojdasfbiog hcsdbn aceihac c
+     
+        ////checked by aniket
 
 
     }
