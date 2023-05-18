@@ -29,6 +29,11 @@ namespace Dem_Telerik.Controllers
             return View("../Home/Demo");
         }
 
+        public ActionResult Pratiksh()
+        {
+
+            return View("../Home/Demo");
+        }
 
 
 
