@@ -50,10 +50,13 @@ namespace Dem_Telerik.Controllers
             return View("../Home/Demo");
         }
         //fhgjjkllkjhvfcf
-
-
-
         // pratiksha kapare
+
+        public ActionResult Update()
+        {
+
+            return View("../Home/Demo");
+        }
 
     }
 }
